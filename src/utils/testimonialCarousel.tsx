@@ -1,20 +1,12 @@
-// lógica do carrossel de depoimentos
-
 import React, { useState } from 'react';
-import Depoiments from '../assets/depoiments.png';
-import Slider from '../assets/Slider.png';
-import Image from '../../node_modules/next/image';
+import DepoimentsImage from '../assets/depoiments.png';
+import SliderImage from '../assets/Slider.png';
+import CustomerCardTestemonial from '../components/elements/CustomerCardTestemonial';
 
 const comments = [
-  { id: 1, text: 'Comentário 1' },
-  { id: 2, text: 'Comentário 2' },
-  { id: 3, text: 'Comentário 3' },
-  { id: 4, text: 'Comentário 4' },
-  { id: 5, text: 'Comentário 5' },
-  { id: 6, text: 'Comentário 6' },
-  { id: 7, text: 'Comentário 7' },
-  { id: 8, text: 'Comentário 8' },
-  { id: 9, text: 'Comentário 9' },
+  { id: 1, username: 'User 1', company: 'Company 1', comment: 'Comentário 1' },
+  { id: 2, username: 'User 2', company: 'Company 2', comment: 'Comentário 2' },
+  { id: 3, username: 'User 3', company: 'Company 3', comment: 'Comentário 3' },
 ];
 
 const itemsPerPage = 3;
@@ -38,39 +30,14 @@ export function TestimonialCarousel() {
     const visibleComments = comments.slice(startIndex, endIndex);
 
     return visibleComments.map((comment) => (
-      <div key={comment.id} className="flex justify-center items-center p-4">
-        <div className="border border-gray-300 rounded-md p-4">
-          <p>{comment.text}</p>
-        </div>
-      </div>
+      <CustomerCardTestemonial key={comment.id} comment={comment} />
     ));
   };
 
   return (
     <div className="w-full flex flex-col items-center justify-center mt-4 sm:mt-6 md:mt-8">
       <div className="w-full relative">
-        <Image
-          src={Depoiments}
-          alt="depoiments clients"
-          layout="responsive"
-          width={471.67}
-          height={498.46}
-          quality={100}
-        />
-        <Image
-          src={Slider}
-          alt="slide"
-          layout="constrained"
-          onClick={nextSlide}
-          className="absolute right-0 top-0 bottom-0 h-full cursor-pointer"
-        />
-        <Image
-          src={Slider}
-          alt="slide"
-          layout="constrained"
-          onClick={prevSlide}
-          className="absolute left-0 top-0 bottom-0 h-full cursor-pointer transform rotate-180"
-        />
+
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
         {renderComments()}
