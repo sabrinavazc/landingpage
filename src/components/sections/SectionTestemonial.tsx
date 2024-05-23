@@ -7,7 +7,7 @@ export function SectionTestemonial() {
     return (
         <section className="w-full bg-jogga-white bg-no-repeat bg-center bg-cover relative">
             <div className="w-full mx-auto flex items-center justify-center">
-                <div className="max-w-[1919px] w-full lg:px-0 lg:mx-[140px] mx-4 sm:mx-6 md:mx-8 mt-4 sm:mt-6 md:mt-8 lg:mt-[140px] lg:h-[994px]"> {/* Margens laterais e altura responsivas */}
+                <div className="max-w-[1919px] w-full lg:px-0 lg:mx-[140px] mx-4 sm:mx-6 md:mx-8 mt-2 mb-6 sm:mt-6 md:mt-8 lg:mt-[140px] lg:h-[994px]">
                     <div className="lg:mg text-center lg:text-center">
                         <h1 className="text-jogga-black-text text-4xl lg:text-6xl font-bold leading-tight mb-4 relative z-10">
                             <span className="relative inline-block">
@@ -24,7 +24,7 @@ export function SectionTestemonial() {
                                 quality={100}
                             />
                         </h1>
-                        <div className="flex flex-col items-center justify-center mt-4 sm:mt-6 md:mt-8"> {/* Margem responsiva */}
+                        <div className="flex flex-col items-center justify-center mt-4 sm:mt-6 md:mt-8">
                             <div className="w-full">
                                 <Image
                                     src={Depoiments}

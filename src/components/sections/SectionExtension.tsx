@@ -4,11 +4,12 @@ import Computer from "../../assets/computer.png";
 import { ButtonContact } from "../elements/ButtonContact";
 import yellow1 from "../../assets/yellow1.png";
 
+
 export function SectionExtension() {
   return (
     <section className="w-full bg-jogga-blue bg-no-repeat bg-center bg-cover relative">
       <Container>
-        <div className="relative flex flex-col lg:flex-row items-center justify-center mx-auto lg:px-0 px-4 lg:mt-[140px] lg:mb-[140px] lg:mb-0 lg:pb-10"> {/* Adicionamos lg:pb-10 para adicionar espaçamento na margem inferior em telas menores */}
+        <div className="relative flex flex-col lg:flex-row items-center justify-center mx-auto lg:px-0 px-4 lg:mt-[140px] mb-6 mt-6 lg:mb-[140px] lg:pb-10"> 
           <div className="w-full lg:w-1/2 relative z-10 mt-2 lg:mt-0 lg:mb-0 lg:ml-0 lg:mr-0">
             <div>
               <Image

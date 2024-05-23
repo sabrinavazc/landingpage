@@ -1,19 +1,19 @@
 // lógica implementada para abrir o popup do whatsapp inserida direramente no componente de botão do whatsapp
 
-// import { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 
-// function useWhatsApp() {
-//     const [showPopup, setShowPopup] = useState(false);
+function useWhatsApp() {
+    const [showPopup, setShowPopup] = useState(false);
 
-//     const handleWhatsAppClick = useCallback(() => {
-//         setShowPopup(true);
-//     }, []);
+    const handleWhatsAppClick = useCallback(() => {
+        setShowPopup(true);
+    }, []);
 
-//     const handleClosePopup = useCallback(() => {
-//         setShowPopup(false);
-//     }, []);
+    const handleClosePopup = useCallback(() => {
+        setShowPopup(false);
+    }, []);
 
-//     return { handleWhatsAppClick, showPopup, handleClosePopup };
-// }
+    return { handleWhatsAppClick, showPopup, handleClosePopup };
+}
 
-// export default useWhatsApp;
+export default useWhatsApp;

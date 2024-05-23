@@ -1,5 +1,6 @@
 import { ButtonContact } from "../elements/ButtonContact";
 
+
 export function SectionFreeTrial() {
     return (
         <section className="w-full h-[574px] bg-jogga-blue bg-no-repeat bg-center bg-cover relative">

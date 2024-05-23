@@ -4,6 +4,7 @@ import Android from "../../assets/android.png";
 import { ButtonContact } from "../elements/ButtonContact";
 import yellow2 from "../../assets/yellow2.png";
 
+
 export function SectionCustomise() {
   return (
     <section className="w-full bg-jogga-white bg-no-repeat bg-center bg-cover relative">
