@@ -1,7 +1,5 @@
 import Image from "../../../node_modules/next/image";
-import Depoiments from "../../assets/depoiments.png";
 import Yellow4 from "../../assets/yellow4.png";
-import Slider from "../../assets/Slider.png";
 import { CarouselTestemonials } from "../CarouselTestimonial";
 import { testimonials } from '../../utils/TestimonialMock';
 
