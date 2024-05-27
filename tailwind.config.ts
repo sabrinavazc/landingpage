@@ -25,6 +25,7 @@ const config: Config = {
         'jogga-green-popup': '#21631B',
         'jogga-gray-popup-input': '#FFFFFF',
         'jogga-gray-popup-place-holder': '#D1D1D1',
+        'jogga-text-blue-testimonial': '#212529',
       },
     },
   },

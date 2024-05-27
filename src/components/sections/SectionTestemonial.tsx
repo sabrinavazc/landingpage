@@ -2,6 +2,9 @@ import Image from "../../../node_modules/next/image";
 import Depoiments from "../../assets/depoiments.png";
 import Yellow4 from "../../assets/yellow4.png";
 import Slider from "../../assets/Slider.png";
+import { CarouselTestemonials } from "../CarouselTestimonial";
+import { testimonials } from '../../utils/TestimonialMock';
+
 
 export function SectionTestemonial() {
     return (
@@ -24,22 +27,10 @@ export function SectionTestemonial() {
                                 quality={100}
                             />
                         </h1>
-                        <div className="flex flex-col items-center justify-center mt-4 sm:mt-6 md:mt-8">
+                        <div className="flex flex-col items-center justify-center w-full sm:mt-6 md:mt-8">
                             <div className="w-full">
-                                <Image
-                                    src={Depoiments}
-                                    alt="depoiments clients"
-                                    layout="responsive"
-                                    width={471.67}
-                                    height={498.46}
-                                    quality={100}
-                                />
+                                <CarouselTestemonials comments={testimonials} />
                             </div>
-                            <Image
-                            src={Slider}
-                            alt="slide"
-                            layout="constrained"
-                            />
                         </div>
                     </div>
                 </div>
