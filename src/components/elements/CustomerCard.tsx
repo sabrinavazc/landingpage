@@ -35,7 +35,7 @@ export const CustomerCommentCard = ({
         />
       </div>
       <div className="flex-grow flex flex-col mt-[16px] lg:mt-[32px] justify-start text-center lg:text-left p-4">
-        <p className={`text-jogga-white text-[16px] lg:text-[18px] ${isFirst ? 'text-jogga-text-blue-testimonial' : ''}`}>
+        <p className={`lg:text-[18px] ${isFirst ? 'text-jogga-text-blue-testimonial' : 'text-jogga-white'}`}>
           {comments}
         </p>
       </div>
@@ -45,7 +45,7 @@ export const CustomerCommentCard = ({
             {usernamecompany}
           </h1>
         </div>
-        <p className={`text-jogga-white text-[14px] lg:text-[16px] ${isFirst ? 'text-jogga-text-blue-testimonial' : ''}`}>
+        <p className={`text-[14px] lg:text-[16px] ${isFirst ? 'text-jogga-text-blue-testimonial' : 'text-jogga-white'}`}>
           {position}
         </p>
       </div>
